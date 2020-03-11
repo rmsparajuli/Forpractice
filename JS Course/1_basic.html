@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Course</title>
+  </head>
+  <body>
+    <!-- style part -->
+    <style>
+      #makeBold {
+        font-weight: bold;
+        font-size: 35px;
+      }
+      body {
+        background: #191919;
+        color: rgb(103, 241, 10);
+        font-family: Lato, sans-serif;
+        line-height: 1.4;
+        font-size: 90%;
+        margin: 2rem;
+      }
+      ol li::before {
+        content: counter(my-awesome-counter);
+        color: #fcd000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        --size: 32px;
+        left: calc(-1 * var(--size) - 10px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        transform: rotate(-10deg);
+        background: black;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 1px 1px 0 #999;
+      }
+    </style>
+    <!-- Code Begin -->
+
+    <ol type="A">
+      <li>
+        <!-- First Chapter -->
+        <h1>Basic</h1>
+        <ol>
+          <li>
+            <!-- First chapter 1 -->
+            <h2>what is JavaScript ?</h2>
+            <ul>
+              <li>
+                <b
+                  >JavaScript is mostly known as client side scripting language.
+                  JavaScript initially use to make your page alive.</b
+                >
+              </li>
+              <li>
+                <b
+                  >At present JavaScript not only execute on browser but also on
+                  the server.</b
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- First chapter 2 -->
+            <h2>History of JavaScript ?</h2>
+            <ul>
+              <li><b>JS was developed by Brendan Eich in 1995.</b></li>
+              <li>
+                <b>
+                  JS started his life with the name Mocha and was concisely
+                  named LiveScript.JavaScript.</b
+                >
+              </li>
+              <li><b> Then LiveScript officially renamed to JavaScript.</b></li>
+              <li>
+                <b>
+                  Java was very popular language at that time, So to tie into
+                  success LiveScript renamed JavaScript.</b
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- First chapter 3 -->
+            <h2>What is ECMAScript ?</h2>
+            <ul>
+              <li><b>In 1996 Netscape submitted JavaScript to ECMA.</b></li>
+              <li>
+                <b
+                  >ECMA(European Computer Manufacturers Association) is a
+                  private international not profit standard organization.</b
+                >
+              </li>
+              <li>
+                <b>
+                  The relation between ECMA Specification JS is implemantation
+                  of ECMAScript.</b
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- First chapter 4 -->
+            <h2>what is ES6 ?</h2>
+            <ul>
+              <li><b>ECMAScript 6 is update of ES5</b></li>
+              <li><b>which was standardized in 2009.</b></li>
+              <li>
+                <b>ES6 was published by ECMA International in June 2015.</b>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <br />
+      <hr />
+
+      <!-- Second Chapter -->
+      <li>
+        <h1>Literals, Variable and Constant ?</h1>
+        <ol>
+          <li>
+            <h3>What is Variables ?</h3>
+            <ul>
+              <li>
+                If I wanted to simply describe a vriable then I would like to
+                say a variable is just a name of the specific value.
+              </li>
+              <li>
+                So now let me first tell you how to create a variable.
+              </li>
+              <li>
+                eg: Age =24
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>What is Constant ?</h3>
+            <ul>
+              <li>
+                In ES6 a new Keyword added in the JavaScript which is const.
+              </li>
+              <li>
+                Constant also hold value but unlike variables It can't be
+                changed after initialization.
+              </li>
+              <li>
+                We cannot change the constant value after you declare it.
+              </li>
+              <li>
+                eg: const TEMP = 12.4, NAME="Daily",
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Naming Roles of Identifiers:</h3>
+            <ul>
+              <li>
+                Identifier consists of letters numbers Underscore (_) and the
+                Doller sign ($)
+              </li>
+              <li>
+                Unicode character are allowed.
+              </li>
+              <li>
+                Identifier must start with the letter Dollar sign ($) or
+                underscore(_).
+              </li>
+              <li>
+                Identifier cannot be a reserved word.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>What is Literals ?</h3>
+            <ul>
+              <li>
+                So the literal means You are providing a value directly in the
+                program.
+              </li>
+              <li>
+                Literals is just the way to create identifier with the value.
+              </li>
+              <li>
+                let age = 24
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- Java Script -->
+    <script>
+      console.log("Hello world");
+    </script>
+  </body>
+</html>
