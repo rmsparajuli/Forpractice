@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Types</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: black;
+        color: green;
+        line-height: 1.4;
+        font-size: 90%;
+        margin: 2rem;
+      }
+    </style>
+
+    <h1>
+      Data Types
+    </h1>
+    <ol type="A">
+      <h2>
+        Primitive Types and Object Types
+      </h2>
+      <li><h3>Primitive Types</h3></li>
+      <ol>
+        <li>
+          <h4>
+            Defination
+          </h4>
+          <ul>
+            <li>immutable data types (which cannot be change)</li>
+            <li>for eg: let x=2, x=3; x value stays 3</li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>
+            String
+          </h4>
+          <ul>
+            <li>
+              String is just a siple text data.
+            </li>
+            <li>
+              We can specify string in the single or double quotes or you can
+              use both.
+            </li>
+            <li>
+              eg: let text = "This is your string"
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>
+            Boolean
+          </h4>
+          <ul>
+            <li>
+              Boolean is just a value type that have only two possible
+              values.(true or false)
+            </li>
+            <li>
+              don't specify the Boolean type in the Quotation mark like this. ("
+              ")
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>
+            Symbols
+          </h4>
+          <ul>
+            <li>
+              In ecmascript 6 we have a new type symbol.
+            </li>
+            <li>
+              Symbols is the new data type in es6 which represent Unique tokens.
+            </li>
+            <li>
+              Once you create a symbol it is unique and it will not match any
+              other symbols
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4>
+            Null and Undefined
+          </h4>
+          <ul>
+            <li>JavaScript has two special types null and undefined.</li>
+            <li>
+              Now has only one possible value which is Null and undefined has
+              only one possible value defined.
+            </li>
+            <li>
+              Both null and undefined Represent something that doesn't exist.
+            </li>
+            <li>ie: null > no data is defined</li>
+            <li>ie: undefined > only variable is defined without value</li>
+          </ul>
+        </li>
+      </ol>
+
+      <!-- B Object Types -->
+      <li>
+        <h3>Object Types</h3>
+        <ol>
+          <li>
+            <h4>Defination</h4>
+            <ul>
+              <li>Objects are mutable.</li>
+              <li>Can change any value anytime.</li>
+              <li>
+                Object is just like a Container that can have different king of
+                data.
+              </li>
+              <li>Object literal syntax : {}</li>
+              <li>example: const obj1 = {}</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Array</h4>
+            <ul>
+              <li>Array is Collection of Different types of data.</li>
+              <li>Array Start with [0] and end with [n] value.</li>
+              <li>
+                <b>Important Features of Array</b>
+                <ol type="a">
+                  <li>
+                    Array element can be any type of data. it may be objects or
+                    primitive type.
+                  </li>
+                  <li>
+                    Array size is not fix so you can add and remove array
+                    element anytime.
+                  </li>
+                  <li>
+                    Array is zero based. so the first element of the array is
+                    zero the next element is 1 and so on.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Date</h4>
+            <ul>
+              <li>
+                So dates are represent the date and time using date object.
+              </li>
+              <li>
+                Date object used to get date or you can use to set date for a
+                particular event.
+              </li>
+              <li>you can also specify time using date of object</li>
+            </ul>
+          </li>
+          <li>
+            <h4>Regular Expression</h4>
+            <ul>
+              <li>Regular expression is sub language of JavaScript.</li>
+              <li>
+                it is used to Perform complex search and replace operations on
+                strings
+              </li>
+              <li>
+                Once you create a symbol it is unique and it will not match any
+                other symbols.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h4>Map and sets</h4>
+            <ul>
+              <li>
+                In new ecmascript 6 a new data type introduced is map and set
+                And their week counterpart, WeakMap and WeakSet.
+              </li>
+              <li>
+                Mpas are just like an object but it Offers more advantages then
+                object in certain situations.
+              </li>
+              <li>
+                Set are similar to array except they can't content dublicate
+                element.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <script>
+      // i don't know wtf is this symbol.
+      blue = Symbol();
+      white = Symbol("Color white");
+      console.log(blue, white);
+      console.log(blue === white);
+      //   object example
+      const obj1 = {
+        son: "Ramesh",
+        father: "Vishnu",
+        Mother: "Laxmi"
+      };
+      console.log("Son is", obj1.son);
+    </script>
+  </body>
+</html>
