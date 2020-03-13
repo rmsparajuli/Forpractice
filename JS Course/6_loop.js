@@ -22,3 +22,22 @@ do {
 
 // for loop and nested loop
 // you know it
+
+// For in loop
+
+const obj = { a: 1, b: 3, c: 3, d: 4 };
+for (let o in obj) {
+  console.log(obj[o]);
+}
+
+// for of loop
+console.log("For of loop");
+const obj2 = [1, 2, 3, 4, 5, 6];
+for (let value of obj2) {
+  console.log(value);
+}
+
+var name;
+var name2 = 2;
+console.log(name, name2 / 0);
+
