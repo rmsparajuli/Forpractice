@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP Concept</title>
+  </head>
+  <body>
+    <style>
+      #makeBold {
+        font-weight: bold;
+        font-size: 35px;
+      }
+      body {
+        background: #191919;
+        color: rgb(103, 241, 10);
+        font-family: Lato, sans-serif;
+        line-height: 1.4;
+        font-size: 90%;
+        margin: 2rem;
+      }
+      ol li::before {
+        content: counter(my-awesome-counter);
+        color: #fcd000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        --size: 32px;
+        left: calc(-1 * var(--size) - 10px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        transform: rotate(-10deg);
+        background: black;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 1px 1px 0 #999;
+      }
+    </style>
+
+    <h1>
+      OOP CONCEPT
+    </h1>
+    <ol type="A">
+      <!-- About Object -->
+      <li>
+        <h3>Object</h3>
+        <ul>
+          <li>
+            Object is a simply a unoudered collection of properties. Each of
+            which has a name and value.
+          </li>
+          <li>
+            Object can aggregate multiple values and allows you to store and
+            access that value by property name
+          </li>
+          <li>
+            Property name can be a string or symbol
+          </li>
+        </ul>
+      </li>
+
+      <!-- About OOP CONCEPT -->
+      <li>
+        <h3>Object Oriented Programming</h3>
+        <ul>
+          <li>
+            In object oriented programming object is a logically related
+            Collection of data and functionality
+          </li>
+          <li>
+            Now this object can be a collection of properties and methods.
+          </li>
+          <li>
+            <b
+              >Lets take Example: Object ={Car}, Properties ={ all parts of car
+              } Methods = {man driving a car}</b
+            >
+          </li>
+          <li>
+            To create object we should have Properties and Methods
+          </li>
+        </ul>
+      </li>
+
+      <!-- Object Reference -->
+      <li>
+        <h3>
+          Obect Reference
+        </h3>
+        <ul>
+          <li>
+            When you specify your object reference to the other variable then
+            you can modify this object using the reference variable.
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <script>
+      // i don't know wtf is this symbol.
+      blue = Symbol();
+      white = Symbol("Color white");
+      console.log(blue, white);
+      console.log(blue === white);
+      //   object example
+      const obj1 = {
+        son: "Ramesh",
+        father: "Vishnu",
+        Mother: "Laxmi"
+      };
+      console.log("Son is", obj1.son);
+    </script>
+  </body>
+</html>
