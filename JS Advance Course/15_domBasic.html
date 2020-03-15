@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <ol type="A">
+      <li>
+        <h3>About DOM</h3>
+        <ul>
+          <li>
+            Dom stands for document object Model.
+          </li>
+          <li>
+            According to the document object model all tag in HTML is an object.
+          </li>
+          <li>
+            The text specified in the tag is also an object.
+          </li>
+          <li>
+            So all these objects are accessible using javascript.
+          </li>
+          <li>
+            DOM is a standard object model and programming interface for HTML.
+          </li>
+          <li>The DOM object defines the HTML elements as object</li>
+          <li>Properties of HTML elements.</li>
+          <li>Methods to access HTML elements and Events for HTML element.</li>
+        </ul>
+      </li>
+      <!-- Dom Tree -->
+      <li>
+        <h3>DOM Tree</h3>
+        <ul>
+          <li>
+            Conceptually, Dom is a tree.
+          </li>
+          <li>A tree consists of nodes.</li>
+          <li>Every notes has parents, zero or more child notes.</li>
+          <li>The root node is document, has only one child HTML.</li>
+          <li>The HTML element has two children title and head</li>
+        </ul>
+      </li>
+      <!-- What you can do using DOM Object -->
+
+      <li>
+        <h3>What you can do using DOM Object</h3>
+        <ul>
+          <li>
+            You can change any HTML elements and its attributes.
+          </li>
+          <li>
+            You can create new HTML elements with its attributes and you can
+            also remove it if you want
+          </li>
+          <li>You can add and change CSS styling of the page.</li>
+          <li>
+            Can react all the event in the HTML page and you can create or
+            change or change any evemt in the webpage.
+          </li>
+        </ul>
+      </li>
+
+      <!-- DOM Programming Interface -->
+      <li>
+        <h3>DOM Programming Interface</h3>
+        <ul>
+          <li>
+            All HTML elements are defined as objects.
+          </li>
+          <li>
+            In the programming interface property is a value which you can get
+            or set.
+          </li>
+          <li>
+            Methods are action perform on the HTML element (deleting a HTML
+            element or create a new one).
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <hr />
+    <p id="para">Now this is dom demo</p>
+    <!-- This is javascript -->
+    <script src="15_domexample.js"></script>
+
+    <!-- CSS -->
+
+    <style>
+      #makeBold {
+        font-weight: bold;
+        font-size: 35px;
+      }
+      body {
+        background: #191919;
+        color: rgb(103, 241, 10);
+        font-family: Lato, sans-serif;
+        line-height: 1.4;
+        font-size: 90%;
+        margin: 2rem;
+      }
+      ol li::before {
+        content: counter(my-awesome-counter);
+        color: #fcd000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: absolute;
+        --size: 32px;
+        left: calc(-1 * var(--size) - 10px);
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        transform: rotate(-10deg);
+        background: black;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 1px 1px 0 #999;
+      }
+    </style>
+  </body>
+</html>

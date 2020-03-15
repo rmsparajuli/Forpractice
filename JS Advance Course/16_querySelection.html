@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuerySelector()</title>
+  </head>
+  <body>
+    <div class="div1">
+      <p class="para">hello</p>
+      <p class="para"></p>
+      <p class="para"></p>
+      <b><p id="para1">hello para1</p></b>
+      <p id="para2">hello para2</p>
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <script src="16_queryExample.js"></script>
+
+  <style>
+    #makeBold {
+      font-weight: bold;
+      font-size: 35px;
+    }
+    body {
+      background: #191919;
+      color: rgb(103, 241, 10);
+      font-family: Lato, sans-serif;
+      line-height: 1.4;
+      font-size: 90%;
+      margin: 2rem;
+    }
+    ol li::before {
+      content: counter(my-awesome-counter);
+      color: #fcd000;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      --size: 32px;
+      left: calc(-1 * var(--size) - 10px);
+      line-height: var(--size);
+      width: var(--size);
+      height: var(--size);
+      top: 0;
+      transform: rotate(-10deg);
+      background: black;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 1px 1px 0 #999;
+    }
+  </style>
+</html>
