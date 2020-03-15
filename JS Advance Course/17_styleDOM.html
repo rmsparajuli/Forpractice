@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style DOM</title>
+  </head>
+  <body>
+    <div class="div1">
+      <h1>Style DOM</h1>
+    </div>
+    <hr />
+    <div>
+      <input type="search" class="submit1" />
+      <input type="submit" />
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <script src="17_styleDOM.js"></script>
+
+  <style>
+    #makeBold {
+      font-weight: bold;
+      font-size: 35px;
+    }
+    body {
+      background: #191919;
+      color: rgb(103, 241, 10);
+      font-family: Lato, sans-serif;
+      line-height: 1.4;
+      font-size: 90%;
+      margin: 2rem;
+    }
+    ol li::before {
+      content: counter(my-awesome-counter);
+      color: #fcd000;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      --size: 32px;
+      left: calc(-1 * var(--size) - 10px);
+      line-height: var(--size);
+      width: var(--size);
+      height: var(--size);
+      top: 0;
+      transform: rotate(-10deg);
+      background: black;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 1px 1px 0 #999;
+    }
+    .submit2 {
+      padding: 1em 4em;
+      font-size: 1em;
+      background-color: rgb(64, 252, 17);
+      color: whitesmoke;
+    }
+  </style>
+</html>
