@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event</title>
+</head> <!-- Here Body Part -->
+<h1>EVENT</h1>
+<ol type="A">
+  <li>
+    <h3>Defination</h3>
+    <ul>
+      <li>
+        Event is just an action perform by users
+      </li>
+      <li>
+        There are 200 types of events in JavaScript
+      </li>
+      <li>
+        Example: click event,
+      </li>
+    </ul>
+  </li>
+</ol>
+<hr />
+<br />
+<!-- This is method to call script without function on js -->
+<!-- <button onclick="document.querySelector('.para').innerHTML = Date()">Click Me</button> -->
+<button onclick="displayDate();">Click to change two paragraph</button>
+<p class="para">Date here</p>
+<p class="para2">Test Text here</p>
+
+<hr />
+
+
+<!-- here without help of html js is going to create event listen -->
+<button class="second"> Click me</button>
+<p class="para3">Here is js auto made click event</p>
+
+<!-- Here Focus and Blur Image -->
+<hr />
+<div>
+  <h1>Focus and Blur Event</h1>
+  <ol type="A">
+    <li>
+      <h3>Focus Event</h3>
+      <ul>
+        <li>
+          Focus Event is fired when html element has receive focus
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3>
+        Blur Event
+      </h3>
+      <ul>
+        <li>
+          Blur Event is fired when element lose focus
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3>Take a demo</h3>
+      <!-- Demo of blur and focus event -->
+
+      <div id="form">
+        <input type="text" placeholder="Name">
+        <input type="password" placeholder="Password">
+      </div>
+    </li>
+  </ol>
+
+</div>
+</body>
+
+<!-- Here CSS -->
+<style>
+  body {
+    background-color: black;
+    color: green;
+  }
+  input{
+    padding: .5em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+</style>
+
+<!-- Here JavaScript -->
+<script src="20_events.js"></script>
+
+</html>
