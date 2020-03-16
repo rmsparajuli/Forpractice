@@ -6,8 +6,8 @@ function sum(a, b) {
   console.log("sum is :", a + b);
 }
 
-const multi = (a, b) => {
+multi = (a, b) => {
   console.log("multiplication of a and b is", a * b);
 };
 
-export default { sum, multi };
+export { sum, multi };
