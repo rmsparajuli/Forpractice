@@ -1,6 +1,6 @@
 /** Write a program to sort array n assending order */
 
-let sort = array => {
+let sort = (array) => {
   const arry2 = [];
   let pos = 0,
     max = array[0],
